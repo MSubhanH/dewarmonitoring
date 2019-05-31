@@ -73,7 +73,7 @@
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>C:\dislin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>C:\dislin\disvc.lib;C:\dislin\discpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\DewarQuantileChangeDetection VS\disvc.lib;D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\DewarQuantileChangeDetection VS\discpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
