@@ -1,0 +1,18 @@
+﻿Build started 5/25/2019 3:16:26 PM.
+     1>Project "D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\DewarQuantileChangeDetection VS\DewarQuantileChangeDetection VS.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\x64\Release\".
+       InitializeBuildStatus:
+         Creating "x64\Release\DewarQuantileChangeDetection VS.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W1 /WX- /O2 /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt DewarHandler.cpp DewarQuantileBasedChangeDetection.cpp
+         DewarHandler.cpp
+     1>d:\tum\hiwi wetzell\matlab scripts\time based analysis\c++ project\dewarquantilechangedetection vs\dewarquantilechangedetection vs\DewarHandler.h(15): fatal error C1083: Cannot open include file: 'dislin.h': No such file or directory
+         DewarQuantileBasedChangeDetection.cpp
+     1>DewarQuantileBasedChangeDetection.cpp(13): fatal error C1083: Cannot open include file: 'dislin.h': No such file or directory
+         Generating Code...
+     1>Done Building Project "D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\DewarQuantileChangeDetection VS\DewarQuantileChangeDetection VS.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.67

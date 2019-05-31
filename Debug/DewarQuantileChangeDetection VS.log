@@ -1,0 +1,24 @@
+﻿Build started 5/23/2019 3:09:12 PM.
+     1>Project "D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\DewarQuantileChangeDetection VS\DewarQuantileChangeDetection VS.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\DewarQuantileChangeDetection VS.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt DewarQuantileBasedChangeDetection.cpp
+         DewarQuantileBasedChangeDetection.cpp
+     1>d:\tum\hiwi wetzell\matlab scripts\time based analysis\c++ project\dewarquantilechangedetection vs\dewarquantilechangedetection vs\dewarquantilebasedchangedetection.cpp(39): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 e:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128) : see declaration of 'getch'
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\Debug\DewarQuantileChangeDetection VS.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\DewarQuantileChangeDetection VS.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\Debug\DewarQuantileChangeDetection VS.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\Debug\DewarQuantileChangeDetection VS.lib" /MACHINE:X86 Debug\DewarHandler.obj
+         Debug\DewarQuantileBasedChangeDetection.obj
+         LINK : D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\Debug\DewarQuantileChangeDetection VS.exe not found or not built by the last incremental link; performing full link
+         DewarQuantileChangeDetection VS.vcxproj -> D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\Debug\DewarQuantileChangeDetection VS.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\Debug\DewarQuantileChangeDetection VS.exe;#1" /manifest "Debug\DewarQuantileChangeDetection VS.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Debug\DewarQuantileChangeDetection VS.unsuccessfulbuild".
+         Touching "Debug\DewarQuantileChangeDetection VS.lastbuildstate".
+     1>Done Building Project "D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\DewarQuantileChangeDetection VS\DewarQuantileChangeDetection VS.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.18
