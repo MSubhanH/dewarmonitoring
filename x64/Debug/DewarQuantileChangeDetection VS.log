@@ -1,12 +1,14 @@
-﻿Build started 5/31/2019 2:33:34 PM.
+﻿Build started 5/31/2019 2:41:58 PM.
      1>Project "D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\DewarQuantileChangeDetection VS\DewarQuantileChangeDetection VS.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "x64\Debug\DewarQuantileChangeDetection VS.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         All outputs are up-to-date.
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Iinclude\ /Zi /nologo /W1 /WX- /O2 /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt src\DewarHandler.cpp src\DewarQuantileBasedChangeDetection.cpp
+         DewarHandler.cpp
+         DewarQuantileBasedChangeDetection.cpp
+         Generating Code...
        Link:
-         All outputs are up-to-date.
-         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\x64\Debug\DewarQuantileChangeDetection VS.exe" /NOLOGO /LIBPATH:C:\dislin "D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\DewarQuantileChangeDetection VS\disvc.lib" "D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\DewarQuantileChangeDetection VS\discpp.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\DewarQuantileChangeDetection VS.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\x64\Debug\DewarQuantileChangeDetection VS.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\x64\Debug\DewarQuantileChangeDetection VS.lib" /MACHINE:X64 x64\Debug\DewarHandler.obj
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\x64\Debug\DewarQuantileChangeDetection VS.exe" /NOLOGO /LIBPATH:C:\dislin lib\disvc.lib lib\discpp.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\DewarQuantileChangeDetection VS.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\x64\Debug\DewarQuantileChangeDetection VS.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\x64\Debug\DewarQuantileChangeDetection VS.lib" /MACHINE:X64 x64\Debug\DewarHandler.obj
          x64\Debug\DewarQuantileBasedChangeDetection.obj
      1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
          DewarQuantileChangeDetection VS.vcxproj -> D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\x64\Debug\DewarQuantileChangeDetection VS.exe
@@ -19,4 +21,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.45
+Time Elapsed 00:00:01.89

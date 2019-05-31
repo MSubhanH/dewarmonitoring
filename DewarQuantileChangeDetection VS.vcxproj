@@ -69,25 +69,25 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\dislin;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>C:\dislin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\DewarQuantileChangeDetection VS\disvc.lib;D:\TUM\HiWi Wetzell\Matlab Scripts\Time Based Analysis\C++ Project\DewarQuantileChangeDetection VS\DewarQuantileChangeDetection VS\discpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>lib\disvc.lib;lib\discpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="DewarHandler.h" />
-    <ClInclude Include="etData10.h" />
-    <ClInclude Include="etVals.h" />
-    <ClInclude Include="pressureData10.h" />
-    <ClInclude Include="pressureVals.h" />
-    <ClInclude Include="stage2Data10.h" />
-    <ClInclude Include="stage2Vals.h" />
+    <ClInclude Include="include\DewarHandler.h" />
+    <ClInclude Include="include\etData10.h" />
+    <ClInclude Include="include\etVals.h" />
+    <ClInclude Include="include\pressureData10.h" />
+    <ClInclude Include="include\pressureVals.h" />
+    <ClInclude Include="include\stage2Data10.h" />
+    <ClInclude Include="include\stage2Vals.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DewarHandler.cpp" />
-    <ClCompile Include="DewarQuantileBasedChangeDetection.cpp" />
+    <ClCompile Include="src\DewarHandler.cpp" />
+    <ClCompile Include="src\DewarQuantileBasedChangeDetection.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

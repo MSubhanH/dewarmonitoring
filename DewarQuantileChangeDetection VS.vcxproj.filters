@@ -15,33 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DewarHandler.h">
+    <ClInclude Include="include\DewarHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="etData10.h">
+    <ClInclude Include="include\etData10.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="etVals.h">
+    <ClInclude Include="include\etVals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="pressureData10.h">
+    <ClInclude Include="include\pressureData10.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="pressureVals.h">
+    <ClInclude Include="include\pressureVals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="stage2Data10.h">
+    <ClInclude Include="include\stage2Data10.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="stage2Vals.h">
+    <ClInclude Include="include\stage2Vals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DewarHandler.cpp">
+    <ClCompile Include="src\DewarHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DewarQuantileBasedChangeDetection.cpp">
+    <ClCompile Include="src\DewarQuantileBasedChangeDetection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
