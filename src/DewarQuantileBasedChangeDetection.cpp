@@ -18,6 +18,8 @@
 #include "etData10.h"
 #include "stage2Data10.h"
 
+#define RIGHT_ARROWKEY 77
+
 using namespace std;
 
 double getPressure(int);
@@ -28,14 +30,14 @@ int main(void){
 
 	DewarHandler obj = DewarHandler();
 	
-	cout<<"Press ESC to run the dewar quantile based change detection algorithm"<<endl<<endl;
+	cout<<"Press the Right Arrow Key to run the dewar quantile based change detection algorithm"<<endl<<endl;
 
 	cout<<std::left<<std::setfill(' ')<<std::setw(15)<<"Stage2";
 	cout<<std::left<<std::setfill(' ')<<std::setw(15)<<"Model";
 	cout<<std::left<<std::setfill(' ')<<std::setw(15)<<"Residual";
 	cout<<std::left<<std::setfill(' ')<<std::setw(15)<<"TestQuantity";
 	cout<<std::left<<std::setfill(' ')<<std::setw(15)<<"Alarm";
-	cout<<std::left<<std::setfill(' ')<<std::setw(15)<<"StabilityLevel"<<endl;
+	cout<<std::left<<std::setfill(' ')<<std::setw(15)<<"StabilityLevel"<<endl<<endl;
 
 	
 	//cout<<std::left<<std::setfill(' ')<<std::setw(15)<<"F1";
@@ -49,7 +51,7 @@ int main(void){
 		int keyBoardEntry = getch();
 
 	
-		if(keyBoardEntry == 27){
+		if(keyBoardEntry == RIGHT_ARROWKEY){
 
 			// Replace the code for interface with sensor data here
 

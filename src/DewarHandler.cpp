@@ -179,7 +179,7 @@ void DewarHandler::updateStabilityLevel(){
 
 void DewarHandler::updateDataPlot(){
 
-	plotData(S2_series, "blue", eqn_series, "red", resS2AndModel_series, "green", dist_series, "orange");
+	plotData(S2_series, "blue", eqn_series, "red", resS2AndModel_series, "green", dist_series, "orange", alarms_series, "gray");
 
 }
 
@@ -199,27 +199,24 @@ void DewarHandler::updateResPlot(){
 
 
 
-void DewarHandler::plotData(double series1[], char* color1, float series2[], char* color2, double series3[], char* color3, float series4[], char* color4){
+void DewarHandler::plotData(double series1[], char* color1, float series2[], char* color2, double series3[], char* color3, float series4[], char* color4, bool series5[], char* color5){
 
-	  float x1[WINDOWSIZE], y1[WINDOWSIZE];
-	  float x2[WINDOWSIZE], y2[WINDOWSIZE];
-	  float x3[WINDOWSIZE], y3[WINDOWSIZE];
-	  float x4[WINDOWSIZE], y4[WINDOWSIZE];
-	  float x5[WINDOWSIZE], y5[WINDOWSIZE];
+	  float x[WINDOWSIZE];
+	  float y1[WINDOWSIZE], y2[WINDOWSIZE], y3[WINDOWSIZE], y4[WINDOWSIZE], y5[WINDOWSIZE];
 	  
 	  for (int i = 0; i < WINDOWSIZE; i++){
 		 
-		  x1[i] = i;
+		  x[i] = i;
+
 		  y1[i] = (float)series1[i];
-
-		  x2[i] = i;
 		  y2[i] = series2[i];
-
-		  x3[i] = i;
 		  y3[i] = (float)series3[i];
-
-		  x4[i] = i;
 		  y4[i] = series4[i];
+
+		  if(series5[i])
+			  y5[i] = (float) 5;
+		  else
+			  y5[i] = (float) 0.1;
 	  }
 		 
 	  g.metafl ("png");
@@ -241,7 +238,7 @@ void DewarHandler::plotData(double series1[], char* color1, float series2[], cha
 	  g.ticks  (9, "x");
 	  g.ticks  (10, "y");
 
-	  g.titlin ("Dewar Monitoring", 1);
+	  g.titlin ("Dewar Data Monitoring Window", 1);
 	 
 	  int ic;
 	  ic = g.intrgb (0.95,0.95,0.95);
@@ -255,16 +252,19 @@ void DewarHandler::plotData(double series1[], char* color1, float series2[], cha
 	  g.title  ();
 
 	  g.color  (color1);
-	  g.curve  (x1, y1, WINDOWSIZE);
+	  g.curve  (x, y1, WINDOWSIZE);
 
 	  g.color  (color2);
-	  g.curve  (x2, y2, WINDOWSIZE);
+	  g.curve  (x, y2, WINDOWSIZE);
 
 	  g.color  (color3);
-	  g.curve  (x3, y3, WINDOWSIZE);
+	  g.curve  (x, y3, WINDOWSIZE);
 
 	  g.color  (color4);
-	  g.curve  (x4, y4, WINDOWSIZE);
+	  g.curve  (x, y4, WINDOWSIZE);
+
+	  g.color  (color5);
+	  g.curve  (x, y5, WINDOWSIZE);
   
 	  g.errmod("all", "off");  
 	  g.disfin ();
@@ -316,7 +316,7 @@ void DewarHandler::plotResData(double tau[], double centroid1[], double centroid
 	  r.ticks  (9, "x");
 	  r.ticks  (10, "y");
 
-	  r.titlin ("Cumulative Probability Distribution Plot", 1);
+	  r.titlin ("Dewar Probability Distributions Window", 1);
 	 
 	  int ic;
 	  ic = g.intrgb (0.95,0.95,0.95);
